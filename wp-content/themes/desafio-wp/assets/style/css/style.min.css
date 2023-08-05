@@ -1,0 +1,609 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor tex-decoration
+ */ 
+
+ a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+}
+
+html, body, div, span, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'CircularSpotifyTxT';
+  font-weight: 300;
+  src: url("../../fonts/CircularSpotifyTxT-Light.woff2") format("woff2"), url("../../fonts/CircularSpotifyTxT-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CircularSpotifyTxT';
+  font-weight: 400;
+  src: url("../../fonts/CircularSpotifyTxT-Book.woff2") format("woff2"), url("../../fonts/CircularSpotifyTxT-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CircularSpotifyTxT';
+  font-weight: 500;
+  src: url("../../fonts/CircularSpotifyTxT-Med.woff2") format("woff2"), url("../../fonts/CircularSpotifyTxT-Med.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CircularSpotifyTxT';
+  font-weight: 700;
+  src: url("../../fonts/CircularSpotifyTxT-Bold.woff2") format("woff2"), url("../../fonts/CircularSpotifyTxT-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CircularSpotifyTxT';
+  font-weight: 900;
+  src: url("../../fonts/CircularSpotifyTxT-Black.woff2") format("woff2"), url("../../fonts/CircularSpotifyTxT-Black.woff") format("woff");
+}
+
+/* line 40, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+:root {
+  --color-header-bg: #000000E6;
+  --color-header-text: #fff;
+  --color-header-link: #fff;
+  --color-header-link-hover: #ccc;
+  --color-content-bg: #000;
+  --color-content-title: #fff;
+  --color-content-text: #fff;
+  --color-content-border: #fff;
+  --color-content-primary: #FF0000;
+  --color-alt-content-bg: #fff;
+  --color-alt-content-title: #FF0000;
+  --color-alt-content-text: #5A5A5A;
+  --color-footer-bg: #121212;
+  --color-footer-text: #fff;
+}
+
+/* line 60, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+html {
+  font-family: 'CircularSpotifyTxT';
+  font-weight: 900;
+}
+
+/* line 65, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+body {
+  background-color: var(--color-content-bg);
+}
+
+/* line 69, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+h1 {
+  line-height: 1;
+  font-size: clamp(2rem, 6vw, 6.25rem);
+  font-weight: 900;
+}
+
+/* line 75, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 900;
+}
+
+/* line 80, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+h3 {
+  line-height: 1;
+  font-size: clamp(1.125rem, 2vw, 1.875rem);
+}
+
+/* line 85, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+p, span, a, button {
+  font-size: clamp(1rem, 2vw, 1, 125rem);
+}
+
+/* line 89, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* line 94, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/general.scss */
+.container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 42px 20px;
+}
+
+/*# sourceMappingURL=general.css.map */
+
+
+/* Header */
+/* line 2, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header {
+  position: relative;
+  z-index: 100;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: 20px;
+}
+
+/* line 16, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+/* line 23, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header .logo {
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 23, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+  .header#main-header .logo {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 33, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+  .header#main-header .nav-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+  }
+}
+
+/* line 46, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header .nav-menu .menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 20px;
+}
+
+/* line 57, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header .nav-menu .menu-link {
+  color: var(--color-header-link);
+  transition: 0.3s;
+}
+
+/* line 61, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header .nav-menu .menu-link:hover {
+  color: var(--color-header-link-hover);
+}
+
+@media screen and (max-width: 600px) {
+  /* line 57, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+  .header#main-header .nav-menu .menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* line 72, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+.header#main-header .nav-menu .menu-link__icon {
+  display: none;
+  max-width: 32px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 72, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/header.scss */
+  .header#main-header .nav-menu .menu-link__icon {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
+
+
+/* line 1, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/footer.scss */
+#main-footer.footer {
+  background-color: var(--color-footer-bg);
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 1, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/footer.scss */
+  #main-footer.footer {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+/* line 12, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/footer.scss */
+#main-footer.footer .footer__logo {
+  max-width: 80px;
+  margin-bottom: 16px;
+}
+
+/* line 17, ../../../../../xampp/htdocs/play.entrevista.com/frontend/style/scss/footer.scss */
+#main-footer.footer .footer__copy {
+  color: var(--color-footer-text);
+}
+
+/*# sourceMappingURL=footer.css.map */

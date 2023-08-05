@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "footer.css",
+	"sources": [
+		"../scss/footer.scss"
+	],
+	"sourcesContent": [
+		"#main-footer.footer {\n  background-color: var(--color-footer-bg);\n  padding: 100px 0;\n\n  @media screen and (max-width: 600px) {\n    padding-top: 40px;\n    padding-bottom: 60px;\n  }\n  \n  .footer {\n\n    &__logo {\n      max-width: 80px;\n      margin-bottom: 16px;\n    }\n  \n    &__copy {\n      color: var(--color-footer-text);\n    }\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,YAAY,AAAA,OAAO,CAAC;EAClB,gBAAgB,EAAE,sBAAsB;EACxC,OAAO,EAAE,OAAO;CAkBjB;;AAhBC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EAJrC,AAAA,YAAY,AAAA,OAAO,CAAC;IAKhB,WAAW,EAAE,IAAI;IACjB,cAAc,EAAE,IAAI;GAcvB;;;;AApBD,AAWI,YAXQ,AAAA,OAAO,CAWd,aAAM,CAAC;EACN,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACpB;;;AAdL,AAgBI,YAhBQ,AAAA,OAAO,CAgBd,aAAM,CAAC;EACN,KAAK,EAAE,wBAAwB;CAChC"
+}

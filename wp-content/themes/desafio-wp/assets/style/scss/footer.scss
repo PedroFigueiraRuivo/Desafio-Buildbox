@@ -1,0 +1,21 @@
+#main-footer.footer {
+  background-color: var(--color-footer-bg);
+  padding: 100px 0;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  
+  .footer {
+
+    &__logo {
+      max-width: 80px;
+      margin-bottom: 16px;
+    }
+  
+    &__copy {
+      color: var(--color-footer-text);
+    }
+  }
+}

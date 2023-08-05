@@ -1,0 +1,69 @@
+.post-template-video{
+  .main-content {
+    @mixin new-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    &__infos {
+      @include new-container;
+      margin-bottom: 42px;
+    }
+  
+    &__tags {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+  
+      @mixin metadate {
+        padding: 3px 36px;
+        border: 1px solid var(--color-content-border);
+      }
+      
+      &__category {
+        background-color: var(--color-alt-content-bg);
+        color: #000;
+        margin-right: 8px;
+        @include metadate;
+      }
+      
+      &__time {
+        @include metadate;
+        color: var(--color-content-text);
+      }
+    }
+  
+    &__title {
+      color: var(--color-content-title);
+    }
+  
+    &__video {
+      width: 100%;
+      height: 550px;
+      margin-bottom: 42px;
+  
+      @media screen and (max-width: 900px) {
+        height: 300px;
+      }
+      
+      @media screen and (max-width: 600px) {
+        height: 250px;
+      }
+      
+      @media screen and (max-width: 480px) {
+        height: 200px;
+      }
+    }
+  
+    &__description {
+      @include new-container;
+  
+      &__content {
+        color: var(--color-content-text);
+        line-height: 2;
+      }
+    }
+  
+  }
+}

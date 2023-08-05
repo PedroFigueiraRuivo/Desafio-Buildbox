@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Required Core Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  
+  <link rel="stylesheet" href="../style/css/style.css">
+  <link rel="stylesheet" href="../style/css/index.css">
+</head>
+<body>
+  <header id="main-header" class="header">
+    <div class="container header__container">
+      <div class="logo">
+        <img src="./imgs/Grupo 1.png" alt="Logo Play" class="logo__image">
+      </div>
+      <nav class="nav-menu menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="" class="menu-link">
+            <img src="https://iluminartodonto.com.br/wp-content/uploads/2023/06/ico-whatsapp.png" alt="icon" class="menu-link__icon">Filmes</a>
+          </li>
+          <li class="menu-item"><a href="" class="menu-link">
+            <img src="https://iluminartodonto.com.br/wp-content/uploads/2023/06/ico-whatsapp.png" alt="icon" class="menu-link__icon">Documentários</a>
+          </li>
+          <li class="menu-item"><a href="" class="menu-link">
+            <img src="https://iluminartodonto.com.br/wp-content/uploads/2023/06/ico-whatsapp.png" alt="icon" class="menu-link__icon">Séries</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <article class="main-article" pfDev-banner-background="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kU955jOXksq2-7k1ZRZwswHaE7%26pid%3DApi&f=1&ipt=2a116c68f402483269175dcbb319c336eaf0794a7806c3d84093425d494779e3&ipo=images">
+    <div class="container">
+      <div class="main-article__contents">
+        <div class="main-article__metadata">
+          <span class="main-article__category">Filmes</span>
+          <span class="main-article__time">130m</span>
+        </div>
+        <h1 class="main-article__title">Pellentesque habitant morbi</h1>
+        <button class="main-article__button">
+          <span>Mais informações</span>
+          <span class="for-mobile">Assistir</span>
+        </button>
+      </div>
+    </div>
+  </article>
+  
+  <main class="main list-categorys-posts">
+    <section class="container">
+      <h2 class="main__category-title">Filmes</h2>
+      <div class="main__glide glide">
+        <div class="main__carrossel glide__track" data-glide-el="track">
+          <ul class="main__post-list glide__slides">
+            <li class="main__post-item glide__slide">
+              <figure class="main__attached-image">
+                <img src="./imgs/IMG - banner.jpg" alt="Background article highlight" class="main__attached-image-img">
+              </figure>
+              <span class="main__time">95m</span>
+              <h3 class="main__title">Maecenas tempus mi a ex malesuada</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container">
+      <h2 class="main__category-title">Filmes</h2>
+      <div class="main__glide glide">
+        <div class="main__carrossel glide__track" data-glide-el="track">
+          <ul class="main__post-list glide__slides">
+            <li class="main__post-item glide__slide">
+              <figure class="main__attached-image">
+                <img src="./imgs/IMG - banner.jpg" alt="Background article highlight" class="main__attached-image-img">
+              </figure>
+              <span class="main__time">95m</span>
+              <h3 class="main__title">Maecenas tempus mi a ex malesuada</h3>
+            </li>
+            <li class="main__post-item glide__slide">
+              <figure class="main__attached-image">
+                <img src="./imgs/IMG - banner.jpg" alt="Background article highlight" class="main__attached-image-img">
+              </figure>
+              <span class="main__time">95m</span>
+              <h3 class="main__title">Maecenas tempus mi a ex malesuada</h3>
+            </li>
+            <li class="main__post-item glide__slide">
+              <figure class="main__attached-image">
+                <img src="./imgs/IMG - banner.jpg" alt="Background article highlight" class="main__attached-image-img">
+              </figure>
+              <span class="main__time">95m</span>
+              <h3 class="main__title">Maecenas tempus mi a ex malesuada</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>  
+
+  <footer id="main-footer" class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo">
+        <img src="./imgs/Grupo 1.png" alt="Logo Play">
+      </div>
+      <p class="footer__copy">© 2020 — Play — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const post = document.querySelector('main li');
+    const list = document.querySelector('main ul');
+
+    for (let II = 0; II < 6; II++) {
+      list.insertAdjacentHTML('beforeend', post.outerHTML);
+    }
+  </script>
+
+  <script type="module" src="js/script.js"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    const listCategorys = document.querySelectorAll('.list-categorys-posts section');
+
+    if (listCategorys.length) {
+      listCategorys.forEach((categoryItem, index) => {
+
+        const screenWidth = window.innerWidth;
+
+        let bound, rewind;
+        const lis = categoryItem.querySelectorAll('li');
+
+        function ajustConfig(value, limit) {
+          return value < limit ? [true, true] : [true, false];
+        }
+
+        if (screenWidth > 900) [bound, rewind] = ajustConfig(lis.length, 6);
+        else if (screenWidth > 600 && screenWidth <= 900) [bound, rewind] = ajustConfig(lis.length, 3);
+        else [bound, rewind] = ajustConfig(lis.length, 2);
+
+        const parentSelector = `glide-${index}`;
+        categoryItem.classList.add(parentSelector);
+
+        if (typeof Glide !== 'undefined') {
+          const glide = new Glide(`.${parentSelector} .glide`, {
+            type: 'slider',
+            perView: 5.5,
+            bound,
+            rewind,
+            animationDuration: 200,
+            gap: 20,
+            perTouch: 5,
+            breakpoints: {
+              900: {
+                perView: 3.3,
+              },
+              600: {
+                perView: 2.2,
+              },
+            },
+          });
+
+          glide.mount();
+        }
+      });
+    }
+  </script>  
+</body>
+</html>

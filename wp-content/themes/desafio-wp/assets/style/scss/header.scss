@@ -1,0 +1,85 @@
+/* Header */
+.header#main-header {
+  position: relative;
+  z-index: 100;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: 20px;
+  display: none;
+
+  // Mixin para alinhar itens do menu
+  @mixin align-items-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  // Container do header
+  .header__container {
+    @include align-items-menu;
+    justify-content: space-between;
+    padding: 8px 20px;
+  }
+
+  // Logo
+  .logo {
+    max-width: 80px;
+    @include align-items-menu;
+
+    @media screen and (max-width: 600px){
+      margin: 0 auto;
+    }
+  }
+
+  // Menu
+  .nav-menu {
+    @media screen and (max-width: 600px){
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      display: flex;
+      gap: 12px;
+      background-color: rgba(#000000, 0.85);
+      width: 100%;
+    }
+    
+    .menu {
+      &-list {
+        @include align-items-menu;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 20px;
+      }
+  
+      // &-item {
+      //   margin-left: 20px;
+      // }
+  
+      &-link {
+        color: var(--color-header-link);
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--color-header-link-hover);
+        }
+
+        @media screen and (max-width: 600px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 12px;
+        }
+
+        &__icon {
+          display: none;
+          max-width: 32px;
+          margin-bottom: 8px;
+
+          @media screen and (max-width: 600px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

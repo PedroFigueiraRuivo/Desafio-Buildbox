@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "single-post.css",
+	"sources": [
+		"../scss/single-post.scss"
+	],
+	"sourcesContent": [
+		".main-content {\n  @mixin new-container {\n    max-width: 800px;\n    margin: 0 auto;\n  }\n\n  &__infos {\n    @include new-container;\n    margin-bottom: 42px;\n  }\n\n  &__tags {\n    margin-bottom: 20px;\n\n    @mixin metadate {\n      padding: 3px 36px;\n      border: 1px solid var(--color-content-border);\n    }\n    \n    &__category {\n      background-color: var(--color-alt-content-bg);\n      color: #000;\n      margin-right: 8px;\n      @include metadate;\n    }\n    \n    &__time {\n      @include metadate;\n      color: var(--color-content-text);\n    }\n  }\n\n  &__title {\n    color: var(--color-content-title);\n  }\n\n  &__video {\n    width: 100%;\n    height: 550px;\n    margin-bottom: 42px;\n\n    @media screen and (max-width: 900px) {\n      height: 300px;\n    }\n    \n    @media screen and (max-width: 600px) {\n      height: 250px;\n    }\n    \n    @media screen and (max-width: 480px) {\n      height: 200px;\n    }\n  }\n\n  &__description {\n    @include new-container;\n\n    &__content {\n      color: var(--color-content-text);\n      line-height: 2;\n    }\n  }\n\n}"
+	],
+	"names": [],
+	"mappings": ";AAMG,AAAD,oBAAQ,CAAC;EAJP,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;EAKd,aAAa,EAAE,IAAI;CACpB;;;AAEA,AAAD,mBAAO,CAAC;EACN,aAAa,EAAE,IAAI;CAkBpB;;;AAXE,AAAD,6BAAW,CAAC;EACV,gBAAgB,EAAE,2BAA2B;EAC7C,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,GAAG;EAPjB,OAAO,EAAE,QAAQ;EACjB,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,2BAA2B;CAQ9C;;;AAEA,AAAD,yBAAO,CAAC;EAXN,OAAO,EAAE,QAAQ;EACjB,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,2BAA2B;EAY7C,KAAK,EAAE,yBAAyB;CACjC;;;AAGF,AAAD,oBAAQ,CAAC;EACP,KAAK,EAAE,0BAA0B;CAClC;;;AAEA,AAAD,oBAAQ,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;CAapB;;AAXC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EALpC,AAAD,oBAAQ,CAAC;IAML,MAAM,EAAE,KAAK;GAUhB;;;AAPC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EATpC,AAAD,oBAAQ,CAAC;IAUL,MAAM,EAAE,KAAK;GAMhB;;;AAHC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EAbpC,AAAD,oBAAQ,CAAC;IAcL,MAAM,EAAE,KAAK;GAEhB;;;;AAEA,AAAD,0BAAc,CAAC;EApDb,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;CA0Df;;;AAJE,AAAD,mCAAU,CAAC;EACT,KAAK,EAAE,yBAAyB;EAChC,WAAW,EAAE,CAAC;CACf"
+}

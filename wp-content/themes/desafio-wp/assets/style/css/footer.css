@@ -1,0 +1,1 @@
+#main-footer.footer{background-color:var(--color-footer-bg);padding:100px 0}@media screen and (max-width: 600px){#main-footer.footer{padding-top:40px;padding-bottom:60px}}#main-footer.footer .footer__logo{max-width:80px;margin-bottom:16px}#main-footer.footer .footer__copy{color:var(--color-footer-text)}
